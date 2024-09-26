@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to razeclaw</title>
+    <style>
+       #subscribeButton {
+    background-color: #c41a1a; /* Red color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.center-container {
+    text-align: center;
+}
+#subscribeButton {
+    /* Existing styles */
+    transition: transform 0.2s ease-in-out;
+}
+
+#subscribeButton:active {
+    transform: scale(0.95);
+}
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <p>Subscribe for daily memes and funny videos</p>
+        <button id="subscribeButton">Subscribe to razeclaw</button>
+    </div>
+    <script>
+       const subscribeButton = document.getElementById('subscribeButton');
+
+subscribeButton.addEventListener('click', () => {
+    window.location.href = "https://www.youtube.com/@razeclaw";
+});
+    </script>
+</body>
+</html>
